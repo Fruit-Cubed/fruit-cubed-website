@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fruit Cubed | Good Fruit, No Waste</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+<link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#" class="logo" aria-label="Fruit Cubed home">
+        <img src="assets/logo.svg" alt="Fruit Cubed"> <h3>Fruit <span>Cubed</span></h3>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#about">Company Identity</a>
+        <a href="#info">Product Information</a>
+        <a href="#process">How It Works</a>
+        <a href="#impact">Our Impact</a>
+
+        <div class="nav-more" id="navMore">
+            <button class="nav-more-toggle" id="navMoreToggle"
+            aria-label="More navigation" aria-expanded="false">More...</button>
+            <div class="nav-more-dropdown" id="navMoreDropdown"></div>
+        </div>
+
+        <a href="#products" class="nav-button">Shop&nbsp;Now&nbsp;↗</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <button class="cart-toggle" aria-label="Open shopping cart"
+        aria-controls="cartDrawer" aria-expanded="false"
+        onclick="openCart()">
+            <img src="assets/shopping-cart.svg" alt="" class="cart-icon">
+            <span class="cart-count empty" id="cartCount">0</span>
+        </button>
+
+        <button class="menu-toggle" aria-label="Toggle navigation"
+        aria-expanded="false" onclick="toggleMenu()">☰</button>
+
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">Imperfect fruit. Perfect potential.</span>
+
+        <h1>
+            Good fruit.<br>
+            No waste.<br>
+            <span>All flavour.</span>
+        </h1>
+
+        <p>
+            Meet Fruit Cubed: A dehydrated fruit powder made from otherwise disposed fresh
+            fruit, which are rejected solely due to their aesthetics while being entirely
+            safe for consumption.
+        </p>
+
+        <a href="#products" class="primary-button">
+            Discover our powders →
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="fruit-circle">
+            🍊🍓🥭
+        </div>
+
+        <div class="floating-label">
+            <span class="calligraphy-text">TOO GOOD TO WASTE!</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="intro" id="about">
+
+    <div class="intro-inner">
+
+        <div class="intro-content">
+
+            <span class="eyebrow">Company Identity</span>
+
+            <h2>
+                Ugly fruit.<br>
+                <span class="highlight">Beautifully reimagined.</span>
+            </h2>
+
+            <p>
+                Not every piece of fruit looks picture-perfect.
+                Some are oddly shaped, slightly bruised or simply
+                too small for supermarket shelves. But on the inside?
+                They're still full of flavour and potential.
+                We rescue this perfectly edible fruit and transform
+                it into vibrant, convenient fruit powder.
+            </p>
+
+        </div>
+
+        <div class="intro-logo">
+            <img src="assets/logo.svg" alt="Fruit Cubed">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCT INFORMATION -->
+
+<section class="product-information" id="info">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">Product Information</span>
+            <h2>Small fruit. <span class="highlight">Big impact.</span></h2>
+            <p>Better ingredients, better choices, better possibilities.</p>
+        </div>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+                <h3>Food waste prevention</h3>
+                <p>
+                    Many fruits in China and worldwide are discarded for cosmetic reasons only. This creates food waste,
+                    because these fruits are still perfectly safe for consumption. We save these fruits to process them into
+                    a powder.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Carbon emission reduction</h3>
+                <p>
+                    Did you know that carbon emissions from food waste could have an even greater affect on the environment
+                    than coal plants worldwide? Our product, by reducing food waste, also helps lessen global warming.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Rehydrate for juice</h3>
+                <p>
+                    You can then rehydrate our product with water to get a fruity drink that improves gut health. Our powder
+                    is directly made from fresh fruit, meaning that it contains the same vitamins.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">From Fruit to Powder</span>
+
+            <h2>How we make the magic happen.</h2>
+
+            <p>Three simple steps. One delicious transformation.</p>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Rescue</h3>
+                <p>
+                    We source cosmetically imperfect but
+                    suitable-to-eat fruit that might otherwise
+                    be overlooked.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Dehydrate</h3>
+                <p>
+                    The fruit is prepared and dehydrated
+                    to remove moisture while retaining
+                    its fruity character.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Transform</h3>
+                <p>
+                    The dried fruit is milled into a fine,
+                    colourful powder ready to brighten
+                    up your everyday creations.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SUSTAINABILITY -->
+
+<section class="impact" id="impact">
+
+    <span class="eyebrow">A Better Kind of Beauty</span>
+
+    <h2>Pretty isn't everything.</h2>
+
+    <p>
+        We believe the value of fruit goes beyond its appearance.
+        As explained in our <a href="#info"> product information</a>,
+        Fruit Cubed aims to make better use of existing food
+        resources to develop a juice that is both more sustainable and healthy.
+    </p>
+
+    <a href="#products" class="primary-button">
+        Be part of the change →
+    </a>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">Meet the Powders</span>
+
+            <h2>A little fruity <span class="highlight">magic.</span></h2>
+
+            <p>
+                Your favourite fruit flavours, in a whole new form.
+            </p>
+
+        </div>
+
+        <div class="product-grid"></div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <img src="assets/logo.svg" alt="Fruit Cubed"> <h3>Fruit <span>Cubed</span></h3>
+        </div>
+
+
+        <div class="footer-links">
+            <a href="#about">Company Identity</a>
+            <a href="#info">Product Information</a>
+            <a href="#process">How It Works</a>
+            <a href="#products">Our Products</a>
+            <a href="#impact">Our Impact</a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- SHOPPING CART -->
+
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+
+    <div class="cart-header">
+
+        <h2>Your cart</h2>
+
+        <button class="cart-close" aria-label="Close cart"
+        onclick="closeCart()">✕</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+
+        <button class="primary-button cart-checkout" disabled
+        onclick="openCheckout()">
+            Checkout →
+        </button>
+
+        <button class="cart-clear" id="cartClear" hidden
+        onclick="clearCart()">
+            Clear cart
+        </button>
+
+        <p class="cart-note">
+            Orders open at launch. No payment taken yet.
+        </p>
+
+    </div>
+
+</aside>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="products.js"></script>
+<script src="script.js?v=3"></script>
+
+</body>
+</html>
