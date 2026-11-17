@@ -43,16 +43,8 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    position: relative;
-}
-
-.section-anchor {
-    position: absolute;
-    top: calc(-1 * var(--nav-height));
-    left: 0;
-    width: 0;
-    height: 0;
+section[id] {
+    scroll-margin-top: var(--nav-height);
 }
 
 body {
