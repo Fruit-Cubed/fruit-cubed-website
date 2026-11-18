@@ -1101,6 +1101,41 @@ footer {
 }
 
 /* =========================
+   BACK TO TOP
+========================= */
+
+.scroll-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--amber-flame);
+    color: var(--white);
+    font-size: 22px;
+    line-height: 1;
+    box-shadow: 0 6px 20px rgba(38,59,48,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 90;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
    RESPONSIVE DESIGN
 ========================= */
 
@@ -1228,5 +1263,13 @@ footer {
 
     .footer-content {
         flex-direction: column;
+    }
+
+    .scroll-top {
+        width: 44px;
+        height: 44px;
+        right: 16px;
+        bottom: 16px;
+        font-size: 18px;
     }
 }

@@ -206,6 +206,14 @@ if (document.fonts) {
 }
 
 // =========================
+// BACK TO TOP
+// =========================
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// =========================
 // SHOPPING CART
 // =========================
 
@@ -645,3 +653,25 @@ renderProducts();
 renderCart();
 updateMoreMenu();
 setNavHeight();
+
+// Show the back-to-top button once the page has been scrolled down
+const scrollTopButton = document.getElementById("scrollTop");
+
+function toggleScrollTop() {
+
+    if (!scrollTopButton) {
+        return;
+    }
+
+    if (window.scrollY > 300) {
+        scrollTopButton.classList.add("visible");
+    } else {
+        scrollTopButton.classList.remove("visible");
+    }
+
+}
+
+if (scrollTopButton) {
+    window.addEventListener("scroll", toggleScrollTop, { passive: true });
+    toggleScrollTop();
+}
