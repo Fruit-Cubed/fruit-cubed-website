@@ -447,7 +447,7 @@ nav {
 
 .product-information {
     background: var(--ocean-blue);
-    padding: 100px 0 100px;
+    padding: 50px 0 100px;
 }
 
 .product-information .section-heading h2,
@@ -508,7 +508,7 @@ nav {
 
 .process {
     background: var(--sage-green);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .process .section-heading h2,
@@ -564,7 +564,7 @@ nav {
 
 .products {
     background: var(--cream);
-    padding: 110px 0;
+    padding: 70px 0;
 }
 
 .product-grid {
@@ -1008,7 +1008,7 @@ body.cart-open {
 
 .impact {
     background: var(--light-coral);
-    padding: 100px 10%;
+    padding: 50px 10%;
     text-align: center;
     color: white;
 }
