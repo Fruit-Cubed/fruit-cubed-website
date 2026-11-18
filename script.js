@@ -172,8 +172,38 @@ let moreMenuResizeTimeout;
 
 window.addEventListener("resize", () => {
     clearTimeout(moreMenuResizeTimeout);
-    moreMenuResizeTimeout = setTimeout(updateMoreMenu, 80);
+    moreMenuResizeTimeout = setTimeout(() => {
+        updateMoreMenu();
+        setNavHeight();
+    }, 80);
 });
+
+// Keep the anchor offset in sync with the nav's actual rendered height,
+// which can differ slightly between browsers due to font metrics.
+
+function setNavHeight() {
+
+    const nav = document.querySelector("nav");
+
+    if (!nav) {
+        return;
+    }
+
+    // Round up to the nearest whole pixel so Safari never leaves a
+    // 1 px gap between the sticky nav and the coloured band.
+    const height = Math.ceil(nav.getBoundingClientRect().height);
+
+    document.documentElement.style.setProperty(
+        "--nav-height",
+        height + "px"
+    );
+
+}
+
+// Re-measure once web fonts have loaded, since they can change nav height.
+if (document.fonts) {
+    document.fonts.ready.then(setNavHeight);
+}
 
 // =========================
 // SHOPPING CART
@@ -614,3 +644,4 @@ document.getElementById("navLinks").addEventListener("focusout", event => {
 renderProducts();
 renderCart();
 updateMoreMenu();
+setNavHeight();
