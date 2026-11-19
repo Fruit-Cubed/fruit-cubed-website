@@ -48,7 +48,7 @@ section[id] {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     background: var(--cream);
     color: var(--dark);
     overflow-x: hidden;
@@ -56,7 +56,7 @@ body {
 
 /* Main display titles */
 h1, h2 {
-    font-family: 'Kapsalon Brush', cursive;
+    font-family: 'Kapsalon Brush', 'Ma Shan Zheng', 'PingFang SC', 'Microsoft YaHei', cursive;
     font-weight: normal;
 }
 
@@ -68,7 +68,7 @@ h3 {
 
 /* Body text */
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 a {
@@ -400,12 +400,12 @@ nav {
     padding: 15px 22px;
     border-radius: 20px;
     font-weight: 800;
-    font-family: "Fruit Cubed Calligraphy";
+    font-family: 'Fruit Cubed Calligraphy', 'Ma Shan Zheng', 'PingFang SC', 'Microsoft YaHei', cursive;
     transform: rotate(5deg);
 }
 
 .calligraphy-text {
-    font-family: 'Fruit Cubed Calligraphy', cursive;
+    font-family: 'Fruit Cubed Calligraphy', 'Ma Shan Zheng', 'PingFang SC', 'Microsoft YaHei', cursive;
 }
 
 /* =========================
