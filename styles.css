@@ -214,6 +214,25 @@ nav {
     display: none;
 }
 
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 40px;
+    padding: 0 12px;
+    background: var(--white);
+    color: var(--dark);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.lang-switch:hover {
+    transform: translateY(-2px);
+}
+
 .menu-toggle {
     display: none;
     background: none;

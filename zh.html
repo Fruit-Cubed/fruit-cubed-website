@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fruit Cubed | 好水果，零浪费</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+<link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#" class="logo" aria-label="Fruit Cubed 首页">
+        <img src="assets/logo.svg" alt="Fruit Cubed"> <h3>Fruit <span>Cubed</span></h3>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#about">品牌理念</a>
+        <a href="#info">产品信息</a>
+        <a href="#process">制作流程</a>
+        <a href="#impact">我们的影响</a>
+
+        <div class="nav-more" id="navMore">
+            <button class="nav-more-toggle" id="navMoreToggle"
+            aria-label="更多导航" aria-expanded="false">更多...</button>
+            <div class="nav-more-dropdown" id="navMoreDropdown"></div>
+        </div>
+
+        <a href="#products" class="nav-button">立即购买&nbsp;↗</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <a href="index.html" class="lang-switch" aria-label="Switch to English">Eng</a>
+
+        <button class="cart-toggle" aria-label="打开购物车"
+        aria-controls="cartDrawer" aria-expanded="false"
+        onclick="openCart()">
+            <img src="assets/shopping-cart.svg" alt="" class="cart-icon">
+            <span class="cart-count empty" id="cartCount">0</span>
+        </button>
+
+        <button class="menu-toggle" aria-label="切换导航"
+        aria-expanded="false" onclick="toggleMenu()">☰</button>
+
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">不完美水果，无限可能。</span>
+
+        <h1>
+            好水果。<br>
+            零浪费。<br>
+            <span>满滋味。</span>
+        </h1>
+
+        <p>
+            认识 Fruit Cubed：一种由原本会被丢弃的新鲜水果制成的脱水果粉。
+            这些水果只因外观不佳被弃置，但完全可安全食用。
+        </p>
+
+        <a href="#products" class="primary-button">
+            探索我们的果粉 →
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="fruit-circle">
+            🍊🍓🥭
+        </div>
+
+        <div class="floating-label">
+            <span class="calligraphy-text">TOO GOOD TO WASTE!</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="intro" id="about">
+
+    <div class="intro-inner">
+
+        <div class="intro-content">
+
+            <span class="eyebrow">品牌理念</span>
+
+            <h2>
+                其貌不扬的水果，<br>
+                <span class="highlight">被重新赋予美好。</span>
+            </h2>
+
+            <p>
+                不是每颗水果都长得完美无瑕。有些形状奇特、略有碰伤，
+                或只是太小而难以上架。但内在呢？它们仍然充满风味与潜力。
+                我们拯救这些完全可以食用的水果，将其转化为鲜活便捷的果粉。
+            </p>
+
+        </div>
+
+        <div class="intro-logo">
+            <img src="assets/logo.svg" alt="Fruit Cubed">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCT INFORMATION -->
+
+<section class="product-information" id="info">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">产品信息</span>
+            <h2>小小水果。<span class="highlight">大大影响。</span></h2>
+            <p>更优原料，更好选择，更多可能。</p>
+        </div>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+                <h3>减少食物浪费</h3>
+                <p>
+                    中国和世界各地有许多水果仅因外观原因就被丢弃。这造成了食物浪费，
+                    因为这些水果仍然完全可以安全食用。我们回收这些水果，将其加工成果粉。
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>减少碳排放</h3>
+                <p>
+                    你知道吗？食物浪费产生的碳排放对环境的潜在影响甚至可能超过全球燃煤电厂。
+                    我们的产品通过减少食物浪费，助力减缓全球变暖。
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>冲水即成果汁</h3>
+                <p>
+                    你可以用水冲调我们的果粉，得到一杯有益肠道健康的水果饮品。
+                    我们的果粉直接由新鲜水果制成，保留了同样的维生素。
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">从水果到果粉</span>
+
+            <h2>我们如何化平凡为神奇。</h2>
+
+            <p>三个简单步骤，一次美味蜕变。</p>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>拯救</h3>
+                <p>
+                    我们采购外观有瑕疵但仍可食用的水果，
+                    否则它们可能会被忽视。
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>脱水</h3>
+                <p>
+                    水果经过处理并脱水，
+                    在去除水分的同时保留其果香特色。
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>转化</h3>
+                <p>
+                    干果被研磨成细腻的彩色粉末，
+                    为你的日常创作增添亮色。
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SUSTAINABILITY -->
+
+<section class="impact" id="impact">
+
+    <span class="eyebrow">一种更美的价值</span>
+
+    <h2>外表并非一切。</h2>
+
+    <p>
+        我们相信水果的价值不止于外表。正如我们的
+        <a href="#info">产品信息</a>中所述，
+        Fruit Cubed 旨在更好地利用现有食物资源，
+        开发出更可持续、更健康的果汁。
+    </p>
+
+    <a href="#products" class="primary-button">
+        加入改变 →
+    </a>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">认识果粉</span>
+
+            <h2>一点点果味<span class="highlight">魔法。</span></h2>
+
+            <p>
+                你喜爱的水果风味，以全新形态呈现。
+            </p>
+
+        </div>
+
+        <div class="product-grid"></div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <a href="#" class="logo" aria-label="Fruit Cubed 首页">
+            <div class="footer-logo">
+                <img src="assets/logo.svg" alt="Fruit Cubed"> <h3>Fruit <span>Cubed</span></h3>
+            </div>
+        </a>
+
+
+        <div class="footer-links">
+            <a href="#about">品牌理念</a>
+            <a href="#info">产品信息</a>
+            <a href="#process">制作流程</a>
+            <a href="#products">我们的产品</a>
+            <a href="#impact">我们的影响</a>
+        </div>
+    </div>
+
+    <p class="copyright">
+        Fruit Cubed 是一个为教育目的而创作的学生项目，并非真实公司或商业实体。
+        Kapsalon Brush 显示字体根据其非商业演示许可证使用。
+        所有内容均用于该学校项目，不用于任何商业目的。
+    </p>
+</footer>
+
+
+<!-- SHOPPING CART -->
+
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="购物车">
+
+    <div class="cart-header">
+
+        <h2>您的购物车</h2>
+
+        <button class="cart-close" aria-label="关闭购物车"
+        onclick="closeCart()">✕</button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>合计</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+
+        <button class="primary-button cart-checkout" disabled
+        onclick="openCheckout()">
+            结账 →
+        </button>
+
+        <button class="cart-clear" id="cartClear" hidden
+        onclick="clearCart()">
+            清空购物车
+        </button>
+
+        <p class="cart-note">
+            开业后开始接单。暂不收款。
+        </p>
+
+    </div>
+
+</aside>
+
+
+<!-- BACK TO TOP -->
+
+<button class="scroll-top" id="scrollTop" aria-label="返回顶部"
+onclick="scrollToTop()">↑</button>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="products.zh.js"></script>
+<script src="script.zh.js?v=3"></script>
+
+</body>
+</html>
