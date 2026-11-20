@@ -403,6 +403,7 @@ nav {
     font-weight: 800;
     font-family: 'Fruit Cubed Calligraphy', 'Ma Shan Zheng', 'PingFang SC', 'Microsoft YaHei', cursive;
     transform: rotate(5deg);
+    font-size: 20px;
 }
 
 .calligraphy-text {
@@ -1291,5 +1292,9 @@ footer {
         right: 16px;
         bottom: 16px;
         font-size: 18px;
+    }
+
+    .floating-label {
+        font-size: 15px;
     }
 }
