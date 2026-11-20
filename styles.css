@@ -106,7 +106,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 6%;
+    padding: 22px 6% 22px 2%;
     height: var(--nav-height);
     background: var(--cream);
     position: sticky;
@@ -221,12 +221,13 @@ nav {
     min-width: 42px;
     height: 40px;
     padding: 0 12px;
-    background: var(--white);
+    background: transparent;
     color: var(--dark);
     border-radius: 30px;
     font-size: 14px;
     font-weight: 700;
     transition: 0.3s;
+    margin-right: 8px;
 }
 
 .lang-switch:hover {
