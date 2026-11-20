@@ -106,7 +106,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 6% 22px 2%;
+    padding: 22px 6% 22px 6%;
     height: var(--nav-height);
     background: var(--cream);
     position: sticky;
@@ -227,11 +227,14 @@ nav {
     font-size: 14px;
     font-weight: 700;
     transition: 0.3s;
-    margin-right: 8px;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .lang-switch:hover {
-    transform: translateY(-2px);
+    transform: translate(-50%, calc(-50% - 2px));
 }
 
 .menu-toggle {
@@ -1219,6 +1222,15 @@ footer {
 
     .nav-actions {
         margin-left: 0;
+    }
+
+    .lang-switch {
+        position: static;
+        transform: none;
+    }
+
+    .lang-switch:hover {
+        transform: translateY(-2px);
     }
 
     .nav-links {
