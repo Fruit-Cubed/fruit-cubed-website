@@ -20,7 +20,7 @@
 const PRODUCTS = {
     strawberry: {
         name: "Strawberry Crush",
-        price: 9.5,
+        price: 25.5,
         description: "Sweet, vibrant and berry delicious.",
         emoji: "🍓",
         image: "",
@@ -28,7 +28,7 @@ const PRODUCTS = {
     },
     mango: {
         name: "Mango Sunshine",
-        price: 10,
+        price: 24,
         description: "Tropical flavour in every little spoonful.",
         emoji: "🥭",
         image: "",
@@ -36,7 +36,7 @@ const PRODUCTS = {
     },
     citrus: {
         name: "Citrus Zing",
-        price: 8.5,
+        price: 26,
         description: "Bright, zesty and bursting with citrus flavour.",
         emoji: "🍊",
         image: "",

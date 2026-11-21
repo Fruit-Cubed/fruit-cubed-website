@@ -267,7 +267,7 @@ function saveCart() {
 }
 
 function formatPrice(value) {
-    return "$" + value.toFixed(2);
+    return value.toFixed(2) + "元";
 }
 
 // 根据 PRODUCTS 数据按键顺序构建店铺卡片

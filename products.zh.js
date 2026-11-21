@@ -18,7 +18,7 @@
 const PRODUCTS = {
     strawberry: {
         name: "草莓风味",
-        price: 9.5,
+        price: 25.5,
         description: "甜美鲜亮，莓香四溢。",
         emoji: "🍓",
         image: "",
@@ -26,7 +26,7 @@ const PRODUCTS = {
     },
     mango: {
         name: "芒果风味",
-        price: 10,
+        price: 24,
         description: "每一勺都是热带风情。",
         emoji: "🥭",
         image: "",
@@ -34,7 +34,7 @@ const PRODUCTS = {
     },
     citrus: {
         name: "柑橘风味",
-        price: 8.5,
+        price: 26,
         description: "清新酸爽，柑橘味十足。",
         emoji: "🍊",
         image: "",

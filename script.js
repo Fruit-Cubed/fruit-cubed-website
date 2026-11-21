@@ -268,7 +268,7 @@ function saveCart() {
 }
 
 function formatPrice(value) {
-    return "$" + value.toFixed(2);
+    return "CNY&nbsp;" + value.toFixed(2);
 }
 
 // Build the shop cards from the PRODUCTS data, in its key order
